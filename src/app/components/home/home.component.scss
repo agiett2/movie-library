@@ -1,0 +1,59 @@
+.carousel-inner {
+    height: 60vh;
+}
+
+.carousel-inner .carousel-item img {
+    height: 60vh;
+    object-fit: cover;
+}
+
+.carousel-caption h2 {
+    color: #E50914;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.carousel-caption p {
+    color: #ffffff;
+}
+
+.rowposter {
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+}
+
+.rowimg {
+    box-sizing: border-box;
+    display: inline-block;
+    padding: 0px 1.2vw;
+   
+    position: relative;
+    vertical-align: top;
+    white-space: normal;
+    z-index: 1;
+    width: 500px;
+    object-fit: contain;
+    width: 100%;
+    box-sizing: content-box;
+    transition: transform 450ms;
+    border-radius: 10px;
+    @media screen and (min-width: 750px) {
+        padding: 0 .2vw;
+      }
+
+}
+
+.rowimg:hover {
+    transform: scale(1.09);
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.largeposter {
+    max-height: 500px;
+}
+
+.rowposter::-webkit-scrollbar {
+    display: none;
+}
