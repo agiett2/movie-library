@@ -28,7 +28,7 @@ export class SearchComponent implements OnInit {
     this.service.getSearchMovie(this.searchForm.value).subscribe({
       next: (result) => {
         console.log(result, 'searchmovie##');
-        this.searchResult = result.results;
+        this.searchResult = result.results.filter((s:any) => s.backdrop_path);
       }
     });
   }

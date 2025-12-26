@@ -39,7 +39,7 @@ export class HomeComponent implements OnInit {
 
 
   // bannerdata
-  bannerData() {
+  bannerData():void {
     this.service.bannerApiData().subscribe((result) => {
       console.log(result, 'bannerresult#');
       this.bannerResult = result.results;
